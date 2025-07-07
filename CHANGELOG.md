@@ -1,5 +1,19 @@
 # Changelog
 
+
+## 1.1.1
+  * Set key_properties to a list [#75](https://github.com/singer-io/tap-klaviyo/pull/73)
+
+## 1.1.0
+  * Klaviyo API version upgrade to v2024-10-15 [#74](https://github.com/singer-io/tap-klaviyo/pull/74)
+
+## 1.0.1
+  * Bump requests from 2.31.0 to 2.32.3 [#73](https://github.com/singer-io/tap-klaviyo/pull/73)
+
+## 1.0.0
+  * Klaviyo API version upgrade to v2024-02-15 [#67](https://github.com/singer-io/tap-klaviyo/pull/67)
+  * Updates for python 3.11.7 [#66](https://github.com/singer-io/tap-klaviyo/pull/66)
+
 ## 0.3.0
   * Add missing tap tester tests [#52](https://github.com/singer-io/tap-klaviyo/pull/52)
   * Backoff Error Handling [#51](https://github.com/singer-io/tap-klaviyo/pull/51)

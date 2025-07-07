@@ -29,7 +29,9 @@ class DiscoveryTest(KlaviyoBaseTest):
         • verify replication key(s)
         • verify that if there is a replication key we are doing INCREMENTAL otherwise FULL
         """
-        streams_to_test = self.expected_streams()
+        # Test account does not have data for untestable streams
+        untestable_streams = {"unsubscribe"}
+        streams_to_test = self.expected_streams() - untestable_streams
 
         conn_id = connections.ensure_connection(self)
 
@@ -58,9 +60,8 @@ class DiscoveryTest(KlaviyoBaseTest):
                 schema_and_metadata = menagerie.get_annotated_schema(conn_id, catalog['stream_id'])
                 metadata = schema_and_metadata["metadata"]
                 stream_properties = [item for item in metadata if item.get("breadcrumb") == []]
-                actual_primary_keys = set()
-                actual_primary_keys.add(stream_properties[0].get(
-                        "metadata", {self.PRIMARY_KEYS: None}).get(self.PRIMARY_KEYS))
+                actual_primary_keys = stream_properties[0].get(
+                    "metadata", {self.PRIMARY_KEYS: None}).get(self.PRIMARY_KEYS)
                 actual_replication_method = stream_properties[0].get(
                     "metadata", {self.REPLICATION_METHOD: None}).get(self.REPLICATION_METHOD)
                 actual_automatic_fields = set(
