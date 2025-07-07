@@ -3,14 +3,14 @@
 from setuptools import setup
 
 setup(name='tap-klaviyo',
-      version='0.3.0',
+      version='1.1.1',
       description='Singer.io tap for extracting data from the Klaviyo API',
       author='Stitch',
       url='http://singer.io',
       classifiers=['Programming Language :: Python :: 3 :: Only'],
       py_modules=['tap_klaviyo'],
       install_requires=['singer-python @ git+https://github.com/peliqan-io/singer-python@master',
-                        'requests==2.20.0'],
+                        'requests==2.32.3'],
       entry_points='''
           [console_scripts]
           tap-klaviyo=tap_klaviyo:main
