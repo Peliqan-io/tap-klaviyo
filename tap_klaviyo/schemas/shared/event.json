@@ -1,204 +1,213 @@
 {
-  "type": [
-    "null",
-    "object"
-  ],
+  "type": ["null", "object"],
   "properties": {
     "type": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "uuid": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "timestamp": {
-      "type": [
-        "null",
-        "integer"
-      ]
+      "type": ["null", "integer"]
     },
     "datetime": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "id": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "event_properties": {
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {}
+      "type": ["null", "object"],
+      "properties": {
+        "list_id": {
+          "type": ["null", "string"]
+        },
+        "List": {
+          "type": ["null", "string"]
+        },
+        "event_id": {
+          "type": ["null", "string"]
+        },
+        "flow": { "type": ["null", "string"] },
+        "Recipient Email Address": { "type": ["null", "string"] },
+        "_cohortmessage_send_cohort": { "type": ["null", "string"] },
+        "Bounce Type": { "type": ["null", "string"] },
+        "Subject": { "type": ["null", "string"] },
+        "ESP": { "type": ["null", "integer"] },
+        "message": { "type": ["null", "string"] },
+        "Email Domain": { "type": ["null", "string"] },
+        "klaviyo_bounce_category": { "type": ["null", "string"] },
+        "Campaign Name": { "type": ["null", "string"] },
+        "internal": {
+          "type": ["null", "object"],
+          "properties": {
+            "Handoff Time": { "type": ["null", "integer"] },
+            "IpPool": { "type": ["null", "string"] },
+            "Sending Domain": { "type": ["null", "string"] },
+            "Friendly From Domain": { "type": ["null", "string"] },
+            "Sending Ip Address": { "type": ["null", "string"] },
+            "Preview Text": { "type": ["null", "string"] },
+            "Transmission ID": { "type": ["null", "string"] }
+          }
+        },
+        "Inbox Provider": { "type": ["null", "string"] },
+        "extra": {
+          "type": ["null", "object"],
+          "properties": {
+            "bounce_delivery_info": {
+              "type": ["null", "object"],
+              "properties": {
+                "type": { "type": ["null", "string"] },
+                "action_id": { "type": ["null", "integer"] },
+                "reason": { "type": ["null", "string"] },
+                "code": { "type": ["null", "string"] },
+                "ip": { "type": ["null", "string"] },
+                "is_autoresponder": { "type": ["null", "boolean"] },
+                "add_exclusion": { "type": ["null", "boolean"] }
+              }
+            }
+          }
+        },
+        "Bot Click": { "type": ["null", "boolean"] },
+        "Client Name": { "type": ["null", "string"] },
+        "message_interaction": { "type": ["null", "string"] },
+        "_ip": { "type": ["null", "string"] },
+        "Client OS": { "type": ["null", "string"] },
+        "Client Type": { "type": ["null", "string"] },
+        "Client OS Family": { "type": ["null", "string"] },
+        "URL": { "type": ["null", "string"] },
+        "machine_open": { "type": ["null", "boolean"] },
+        "group_ids": {
+          "type": "array",
+          "items": { "type": ["null", "string"] }
+        },
+        "method_detail": { "type": ["null", "string"] },
+        "method": { "type": ["null", "string"] },
+        "email_address": { "type": ["null", "string"] }
+      }
     },
     "profile": {
-      "type": [
-        "null",
-        "array"
-      ],
+      "type": ["null", "array"],
       "items": {
-        "type": [
-          "null",
-          "object"
-        ],
+        "type": ["null", "object"],
         "properties": {
           "type": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "id": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "email": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "phone_number": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "external_id": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "first_name": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "last_name": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "organization": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "title": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "image": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "created": {
-            "type": [
-              "null",
-              "string"
-            ],
+            "type": ["null", "string"],
             "format": "date-time"
           },
           "updated": {
-            "type": [
-              "null",
-              "string"
-            ],
+            "type": ["null", "string"],
             "format": "date-time"
           },
           "last_event_date": {
-            "type": [
-              "null",
-              "string"
-            ],
+            "type": ["null", "string"],
             "format": "date-time"
           },
           "location": {
-            "type": [
-              "null",
-              "object"
-            ],
-            "properties": {}
+            "type": ["null", "object"],
+            "properties": {
+              "longitude": { "type": ["null", "number"] },
+              "zip": { "type": ["string", "null"] },
+              "country": { "type": ["null", "string"] },
+              "region": { "type": ["null", "string"] },
+              "address2": { "type": ["string", "null"] },
+              "address1": { "type": ["string", "null"] },
+              "city": { "type": ["null", "string"] },
+              "latitude": { "type": ["null", "number"] },
+              "timezone": { "type": ["null", "string"] },
+              "ip": { "type": ["null", "string"] }
+            }
           },
           "properties": {
-            "type": [
-              "null",
-              "object"
-            ],
-            "properties": {}
+            "type": ["null", "object"],
+            "properties": {
+              "source": { "type": ["null", "string"] },
+              "Accepts Marketing": {
+                "type": ["null", "string"]
+              },
+              "consent_method": { "type": ["null", "string"] },
+              "consent_form_id": { "type": ["null", "string"] },
+              "consent_form_version": { "type": ["null", "integer"] },
+              "consent": {
+                "type": ["null", "array"],
+                "items": { "type": ["null", "string"] }
+              },
+              "Shopify Tags": {
+                "type": ["null", "array"],
+                "items": { "type": ["null", "string"] }
+              },
+              "Expected Date Of Next Order": { "type": ["null", "string"] },
+              "consent_timestamp": {
+                "type": ["null", "string"]
+              },
+              "phone_number_region": { "type": ["null", "string"] },
+              "vollständiger_name": { "type": ["null", "string"] }
+            }
           }
         }
       }
     },
     "metric": {
-      "type": [
-        "null",
-        "array"
-      ],
+      "type": ["null", "array"],
       "items": {
-        "type": [
-          "null",
-          "object"
-        ],
+        "type": ["null", "object"],
         "properties": {
           "type": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "id": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "name": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": ["null", "string"]
           },
           "created": {
-            "type": [
-              "null",
-              "string"
-            ],
+            "type": ["null", "string"],
             "format": "date-time"
           },
           "updated": {
-            "type": [
-              "null",
-              "string"
-            ],
+            "type": ["null", "string"],
             "format": "date-time"
           },
           "integration": {
-            "type": [
-              "null",
-              "object"
-            ],
-            "properties": {}
+            "type": ["null", "object"],
+            "properties": {
+              "object": { "type": ["null", "string"] },
+              "id": { "type": ["null", "string"] },
+              "key": { "type": ["null", "string"] },
+              "name": { "type": ["null", "string"] },
+              "category": { "type": ["null", "string"] }
+            }
           }
         }
       }

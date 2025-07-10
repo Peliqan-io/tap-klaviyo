@@ -1,117 +1,202 @@
 {
-  "type": [
-    "null",
-    "object"
-  ],
+  "type": ["null", "object"],
   "properties": {
     "type": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "id": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "phone_number": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "external_id": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "first_name": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "last_name": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "organization": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "title": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "image": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     },
     "created": {
-      "type": [
-        "null",
-        "string"
-      ],
+      "type": ["null", "string"],
       "format": "date-time"
     },
     "updated": {
-      "type": [
-        "null",
-        "string"
-      ],
+      "type": ["null", "string"],
       "format": "date-time"
     },
     "last_event_date": {
-      "type": [
-        "null",
-        "string"
-      ],
+      "type": ["null", "string"],
       "format": "date-time"
     },
     "location": {
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {}
+      "type": ["null", "object"],
+      "properties": {
+        "longitude": { "type": ["null", "number"] },
+        "zip": { "type": ["string", "null"] },
+        "country": { "type": ["null", "string"] },
+        "region": { "type": ["null", "string"] },
+        "address2": { "type": ["string", "null"] },
+        "address1": { "type": ["string", "null"] },
+        "city": { "type": ["null", "string"] },
+        "latitude": { "type": ["null", "number"] },
+        "timezone": { "type": ["null", "string"] },
+        "ip": { "type": ["null", "string"] }
+      }
     },
     "properties": {
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {}
+      "type": ["null", "object"],
+      "properties": {
+        "source": { "type": ["null", "string"] },
+        "Accepts Marketing": { "type": ["null", "string"] },
+        "consent_method": { "type": ["null", "string"] },
+        "consent_form_id": { "type": ["null", "string"] },
+        "consent_form_version": { "type": ["null", "integer"] },
+        "consent": {
+          "type": ["null", "array"],
+          "items": { "type": ["null", "string"] }
+        },
+        "Shopify Tags": {
+          "type": ["null", "array"],
+          "items": { "type": ["null", "string"] }
+        },
+        "Expected Date Of Next Order": { "type": ["null", "string"] },
+        "consent_timestamp": {
+          "type": ["null", "string"]
+        },
+        "phone_number_region": { "type": ["null", "string"] },
+        "vollständiger_name": { "type": ["null", "string"] }
+      }
     },
     "subscriptions": {
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {}
+      "type": ["null", "object"],
+      "properties": {
+        "email": {
+          "type": ["null", "object"],
+          "properties": {
+            "marketing": {
+              "type": ["null", "object"],
+              "properties": {
+                "can_receive_email_marketing": { "type": ["null", "boolean"] },
+                "consent": { "type": ["null", "string"] },
+                "consent_timestamp": {
+                  "type": ["null", "string"],
+                  "format": "date-time"
+                },
+                "last_updated": {
+                  "type": ["null", "string"],
+                  "format": "date-time"
+                },
+                "method": { "type": ["null", "string"] },
+                "method_detail": { "type": ["null", "string"] },
+                "custom_method_detail": { "type": ["string", "null"] },
+                "double_optin": { "type": ["boolean", "null"] },
+                "suppression": {
+                  "type": ["null", "array"],
+                  "items": {
+                    "type": ["null", "object"],
+                    "properties": {
+                      "reason": { "type": ["null", "string"] },
+                      "timestamp": {
+                        "type": ["null", "string"],
+                        "format": "date-time"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "sms": {
+          "type": ["null", "object"],
+          "properties": {
+            "marketing": {
+              "type": ["null", "object"],
+              "properties": {
+                "can_receive_sms_marketing": { "type": ["null", "boolean"] },
+                "consent": { "type": ["null", "string"] },
+                "consent_timestamp": {
+                  "type": ["string", "null"],
+                  "format": "date-time"
+                },
+                "method": { "type": ["string", "null"] },
+                "method_detail": { "type": ["string", "null"] },
+                "last_updated": {
+                  "type": ["string", "null"],
+                  "format": "date-time"
+                }
+              }
+            },
+            "transactional": {
+              "type": ["null", "object"],
+              "properties": {
+                "can_receive_sms_transactional": {
+                  "type": ["null", "boolean"]
+                },
+                "consent": { "type": ["null", "string"] },
+                "consent_timestamp": {
+                  "type": ["string", "null"],
+                  "format": "date-time"
+                },
+                "method": { "type": ["string", "null"] },
+                "method_detail": { "type": ["string", "null"] },
+                "last_updated": {
+                  "type": ["string", "null"],
+                  "format": "date-time"
+                }
+              }
+            }
+          }
+        },
+        "mobile_push": {
+          "type": ["null", "object"],
+          "properties": {
+            "marketing": {
+              "type": ["null", "object"],
+              "properties": {
+                "can_receive_push_marketing": { "type": ["null", "boolean"] },
+                "consent": { "type": ["null", "string"] },
+                "consent_timestamp": {
+                  "type": ["string", "null"],
+                  "format": "date-time"
+                }
+              }
+            }
+          }
+        }
+      }
     },
     "predictive_analytics": {
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {}
+      "type": ["null", "object"],
+      "properties": {
+        "historic_number_of_orders": { "type": ["number", "null"] },
+        "predicted_number_of_orders": { "type": ["number", "null"] },
+        "average_days_between_orders": { "type": ["number", "null"] },
+        "average_order_value": { "type": ["number", "null"] },
+        "historic_clv": { "type": ["number", "null"] },
+        "predicted_clv": { "type": ["number", "null"] },
+        "total_clv": { "type": ["number", "null"] },
+        "churn_probability": { "type": ["number", "null"] },
+        "expected_date_of_next_order": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        }
+      }
     },
     "email": {
-      "type": [
-        "null",
-        "string"
-      ]
+      "type": ["null", "string"]
     }
   }
 }
