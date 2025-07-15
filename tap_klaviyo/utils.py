@@ -43,6 +43,21 @@ STREAM_PARAMS_MAP = {
         {
             "include": "tags"
         }
+    ],
+    "flows": [
+        {
+            "include": "tags,flow-actions"
+        }
+    ],
+    "profiles" : [
+        {
+            "include" : ""
+        }
+    ],
+    "segments" : [
+        {
+            "include" : ""
+        }
     ]
 
 }
