@@ -1,0 +1,37 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "type": { "type": ["null", "string"] },
+    "id": { "type": ["null", "string"] },
+    "name": { "type": ["null", "string"] },
+    "status": { "type": ["null", "string"] },
+    "archived": { "type": ["null", "boolean"] },
+    "created": { "type": ["null", "string"] },
+    "updated": { "type": ["null", "string"] },
+    "trigger_type": { "type": ["null", "string"] },
+    "tags": {
+      "type": ["null", "array"],
+      "items": {
+        "type": ["null", "object"],
+        "properties": {
+          "type": { "type": ["null", "string"] },
+          "id": { "type": ["null", "string"] }
+        }
+      }
+    },
+    "flow-actions": {
+      "type": ["null", "array"],
+      "items": {
+        "type": ["null", "object"],
+        "properties": {
+          "type": { "type": ["null", "string"] },
+          "id": { "type": ["null", "string"] },
+          "action_type": { "type": ["null", "string"] },
+          "status": { "type": ["null", "string"] },
+          "created": { "type": ["null", "string"] },
+          "updated": { "type": ["null", "string"] }
+        }
+      }
+    }
+  }
+}

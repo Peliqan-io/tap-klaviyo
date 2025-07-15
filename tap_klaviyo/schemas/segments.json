@@ -1,0 +1,13 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "type": { "type": ["null", "string"] },
+    "id": { "type": ["null", "string"] },
+    "name": { "type": ["null", "string"] },
+    "created": { "type": ["null", "string"] },
+    "updated": { "type": ["null", "string"] },
+    "is_active": { "type": ["null", "boolean"] },
+    "is_processing": { "type": ["null", "boolean"] },
+    "is_starred": { "type": ["null", "boolean"] }
+  }
+}
