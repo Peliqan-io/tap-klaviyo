@@ -33,7 +33,7 @@
         "$_cohort$message_send_cohort": { "type": ["null", "string"] },
         "Bounce Type": { "type": ["null", "string"] },
         "Subject": { "type": ["null", "string"] },
-        "$ESP": { "type": ["null", "integer"] },
+        "$ESP": { "type": ["null", "number"] },
         "$message": { "type": ["null", "string"] },
         "Email Domain": { "type": ["null", "string"] },
         "$klaviyo_bounce_category": { "type": ["null", "string"] },
