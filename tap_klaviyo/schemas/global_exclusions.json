@@ -58,12 +58,12 @@
     "properties": {
       "type": ["null", "object"],
       "properties": {
-        "source": { "type": ["null", "string"] },
+        "$source": { "type": ["null", "string"] },
         "Accepts Marketing": { "type": ["null", "string"] },
-        "consent_method": { "type": ["null", "string"] },
-        "consent_form_id": { "type": ["null", "string"] },
-        "consent_form_version": { "type": ["null", "integer"] },
-        "consent": {
+        "$consent_method": { "type": ["null", "string"] },
+        "$consent_form_id": { "type": ["null", "string"] },
+        "$consent_form_version": { "type": ["null", "integer"] },
+        "$consent": {
           "type": ["null", "array"],
           "items": { "type": ["null", "string"] }
         },
@@ -72,10 +72,10 @@
           "items": { "type": ["null", "string"] }
         },
         "Expected Date Of Next Order": { "type": ["null", "string"] },
-        "consent_timestamp": {
+        "$consent_timestamp": {
           "type": ["null", "string"]
         },
-        "phone_number_region": { "type": ["null", "string"] },
+        "$phone_number_region": { "type": ["null", "string"] },
         "vollständiger_name": { "type": ["null", "string"] }
       }
     },

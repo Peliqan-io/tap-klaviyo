@@ -25,20 +25,20 @@
         "List": {
           "type": ["null", "string"]
         },
-        "event_id": {
+        "$event_id": {
           "type": ["null", "string"]
         },
-        "flow": { "type": ["null", "string"] },
+        "$flow": { "type": ["null", "string"] },
         "Recipient Email Address": { "type": ["null", "string"] },
-        "_cohortmessage_send_cohort": { "type": ["null", "string"] },
+        "$_cohort$message_send_cohort": { "type": ["null", "string"] },
         "Bounce Type": { "type": ["null", "string"] },
         "Subject": { "type": ["null", "string"] },
-        "ESP": { "type": ["null", "integer"] },
-        "message": { "type": ["null", "string"] },
+        "$ESP": { "type": ["null", "integer"] },
+        "$message": { "type": ["null", "string"] },
         "Email Domain": { "type": ["null", "string"] },
-        "klaviyo_bounce_category": { "type": ["null", "string"] },
+        "$klaviyo_bounce_category": { "type": ["null", "string"] },
         "Campaign Name": { "type": ["null", "string"] },
-        "internal": {
+        "$internal": {
           "type": ["null", "object"],
           "properties": {
             "Handoff Time": { "type": ["null", "integer"] },
@@ -51,10 +51,10 @@
           }
         },
         "Inbox Provider": { "type": ["null", "string"] },
-        "extra": {
+        "$extra": {
           "type": ["null", "object"],
           "properties": {
-            "bounce_delivery_info": {
+            "$bounce_delivery_info": {
               "type": ["null", "object"],
               "properties": {
                 "type": { "type": ["null", "string"] },
@@ -70,14 +70,14 @@
         },
         "Bot Click": { "type": ["null", "boolean"] },
         "Client Name": { "type": ["null", "string"] },
-        "message_interaction": { "type": ["null", "string"] },
+        "$message_interaction": { "type": ["null", "string"] },
         "_ip": { "type": ["null", "string"] },
         "Client OS": { "type": ["null", "string"] },
         "Client Type": { "type": ["null", "string"] },
         "Client OS Family": { "type": ["null", "string"] },
         "URL": { "type": ["null", "string"] },
         "machine_open": { "type": ["null", "boolean"] },
-        "group_ids": {
+        "$group_ids": {
           "type": "array",
           "items": { "type": ["null", "string"] }
         },
@@ -151,14 +151,14 @@
           "properties": {
             "type": ["null", "object"],
             "properties": {
-              "source": { "type": ["null", "string"] },
+              "$source": { "type": ["null", "string"] },
               "Accepts Marketing": {
                 "type": ["null", "string"]
               },
-              "consent_method": { "type": ["null", "string"] },
-              "consent_form_id": { "type": ["null", "string"] },
-              "consent_form_version": { "type": ["null", "integer"] },
-              "consent": {
+              "$consent_method": { "type": ["null", "string"] },
+              "$consent_form_id": { "type": ["null", "string"] },
+              "$consent_form_version": { "type": ["null", "integer"] },
+              "$consent": {
                 "type": ["null", "array"],
                 "items": { "type": ["null", "string"] }
               },
@@ -167,10 +167,10 @@
                 "items": { "type": ["null", "string"] }
               },
               "Expected Date Of Next Order": { "type": ["null", "string"] },
-              "consent_timestamp": {
+              "$consent_timestamp": {
                 "type": ["null", "string"]
               },
-              "phone_number_region": { "type": ["null", "string"] },
+              "$phone_number_region": { "type": ["null", "string"] },
               "vollständiger_name": { "type": ["null", "string"] }
             }
           }
